@@ -1,7 +1,15 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>theXappy (Shai S)</Authors>
+    <Product></Product>
+    <Description>Microsoft Network Monitor API wrapper for .NET .</Description>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/theXappy/SharpMon</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/theXappy/SharpMon</RepositoryUrl>
+    <PackageTags>Network Monitor Packet Capture Sniffer Protocols</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
