@@ -7,6 +7,13 @@ The API is available on Windows machines where Microsoft Network Monitor was ins
 
 Please [downloaded Microsoft Network Monitor](https://www.microsoft.com/en-us/download/details.aspx?id=4865) before using the code in this repo.
 
+## How to include SharpMon in your project
+There are 2 ways to add the SharpMon library to your project:
+
+1. Get it [from NuGet](https://www.nuget.org/packages/SharpMon/)
+2. Download the code in this repo and add the SharpMon project (.csproj) to your solution
+
+
 ## Quick Start
 SharpMon's centric piece is the ```NetMonSniffer``` class.
 You can use it to start sniffing frames from your network adapter in very few steps.
