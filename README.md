@@ -43,9 +43,8 @@ This short example shows basic usage of ```NetMonSniffer```
 
 If your machine has more than one network interface you'll need to find the right ```adapterId``` to pass to ```sniffer.Start( )```.
 
-The returned value from ```sniffer.GetAdapters()``` is a dictionary mapping adapter IDs to Netmon/.NET structures.
-
-You can use either of those to find the right adapter.
+The returned value from ```sniffer.GetAdapters()``` is a dictionary mapping adapter IDs to Netmon/.NET structures representing the adapter.
+You can use either of those to find the right one.
 
 
 The next example shows how to find an adapter called "Ethernet 3" (Name from the control panel):
