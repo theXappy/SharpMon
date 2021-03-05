@@ -13,6 +13,14 @@ namespace SharpMon
         public delegate void FrameEventHandle(object sender, uint macType, byte[] frameData);
         public event FrameEventHandle FrameAvailable;
 
+        private CaptureCallbackDelegate captureCallback;
+
+        public NetMonSniffer()
+        {
+            // Holding this delegate as a member otherwise it get's GC'd
+            captureCallback = new CaptureCallbackDelegate(FrameCapturedCallback);
+        }
+
         private uint InitIfRequired()
         {
             if (_netApiInited)
@@ -91,7 +99,7 @@ namespace SharpMon
 
             _engine = NetmonAPI.NmOpenCaptureEngineManaged();
 
-            errno = NetmonAPI.NmConfigAdapter(_engine, adapterId, FrameCapturedCallback, IntPtr.Zero,
+            errno = NetmonAPI.NmConfigAdapter(_engine, adapterId, captureCallback, IntPtr.Zero,
                 NmCaptureCallbackExitMode.DiscardRemainFrames);
             if (errno != 0)
             {
