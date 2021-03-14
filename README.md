@@ -39,7 +39,7 @@ This short example shows basic usage of ```NetMonSniffer```
     ... do more stuff / sleep ...
     Thread.Sleep(10_000);
 
-    // Stop capturing and release capuring resources
+    // Stop capturing and release capturing resources
     sniffer.Stop();
 ```
 
