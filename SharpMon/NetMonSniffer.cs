@@ -139,6 +139,9 @@ namespace SharpMon
             uint res = NetmonAPI.NmGetFrameMacType(hFrame, out var macType);
             if (res != 0) return;
 
+            // Seems like the MAC value we are getting is not zero-based and it should be
+            macType -= 1;
+
             byte[] rawFrameData = NetmonAPI.NmGetRawFrameManaged(hFrame);
 
             // Dispose of unmanaged frame handle

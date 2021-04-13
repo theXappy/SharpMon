@@ -10,7 +10,7 @@
     <PackageProjectUrl>https://github.com/theXappy/SharpMon</PackageProjectUrl>
     <RepositoryUrl>https://github.com/theXappy/SharpMon</RepositoryUrl>
     <PackageTags>Network Monitor Packet Capture Sniffer Protocols</PackageTags>
-    <Version>1.0.0.2</Version>
+    <Version>1.0.0.3</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
