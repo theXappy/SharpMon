@@ -10,7 +10,7 @@
     <PackageProjectUrl>https://github.com/theXappy/SharpMon</PackageProjectUrl>
     <RepositoryUrl>https://github.com/theXappy/SharpMon</RepositoryUrl>
     <PackageTags>Network Monitor Packet Capture Sniffer Protocols</PackageTags>
-    <Version>1.0.0.3</Version>
+    <Version>1.0.0.4</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -18,8 +18,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="NMAPI.dll">
+    <Content Include="NMAPI.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+      <PackagePath>lib\$(TargetFramework)</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <Pack>true</Pack>
+    </Content>
   </ItemGroup>
 </Project>
