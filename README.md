@@ -6,7 +6,7 @@ Boilerplate code around Microsoft's Network Monitor API so you can focus on the 
 SharpMon uses Microsoft Network Monitor API to capture traffic.\
 The API is available on Windows machines where Microsoft Network Monitor was installed.
 
-Please [downloaded Microsoft Network Monitor](https://www.microsoft.com/en-us/download/details.aspx?id=4865) before using the code in this repo.
+Please [install Microsoft Network Monitor](https://www.microsoft.com/en-us/download/details.aspx?id=4865) before using the code in this repo.
 
 ## How to include SharpMon in your project
 There are 2 ways to add the SharpMon library to your project:
